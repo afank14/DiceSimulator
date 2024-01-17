@@ -38,7 +38,7 @@ public class Program
         for (int i = 2; i <= 12; i++)
         {
             // Create a percentage of rolls for each increment
-            int percent = (results[i - 2] * 100) / numRolls;
+            int percent = (int)(((float)results[i - 2] / numRolls) * 100);
             // Create a string of * based on the percent
             string asterisks = new string('*', percent);
             // Write the line of the number and its asterisks
